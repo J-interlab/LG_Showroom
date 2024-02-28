@@ -1,0 +1,149 @@
+html {
+    --spinner: #bb0147;
+    --border: white;
+    --center: translate(-50%, -50%);
+}
+
+.popup {
+    background-color: #000000b4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 3;
+  }
+
+.loading-wrapper {
+    position: relative;
+}
+
+.loading-percent {
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    display: inline;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.loading-progress {
+    display: inline;
+    animation: progress 2s linear infinite;
+}
+
+@keyframes progress { 
+    0% {
+        clip-path: polygon(0 0%, 0% 0%, 0% 100%, 0% 100%);
+    }
+    25% {
+        clip-path: polygon(0 0%, 0% 0%, 0% 100%, 0% 100%);
+    }
+    26% {
+        clip-path: polygon(0 0%, 33% 0%, 33% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0 0%, 33% 0%, 33% 100%, 0% 100%);
+    }
+    51% {
+        clip-path: polygon(0 0%, 66% 0%, 66% 100%, 0% 100%);
+    }
+    75% {
+        clip-path: polygon(0 0%, 66% 0%, 66% 100%, 0% 100%);
+    }
+    76% {
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+    } 
+}
+
+.center {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--spinner);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: var(--center); 
+}
+
+.outer-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+}
+  
+.outer-arc {
+    position: absolute;
+    border-radius: 50%;
+    border: 8px solid;
+    width: 60px;
+    height: 60px;
+}
+
+.inner-arc {
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid;
+    width: 58px;
+    height: 58px;
+}
+
+.inner-arc_start-a {
+    border-color: transparent transparent transparent var(--border);
+    /*NOTE: the order here very much matters!  */
+    transform: var(--center) rotate(-3deg);
+}
+
+.inner-arc_end-a {
+    border-color: transparent transparent transparent var(--border);
+    transform: var(--center) rotate(13deg);
+}
+
+.inner-arc_start-b {
+    border-color: transparent transparent transparent var(--border); 
+    transform: var(--center) rotate(-3deg) scale(-1, -1);
+}
+.inner-arc_end-b {
+    border-color: transparent transparent transparent var(--border); 
+    transform: var(--center) rotate(13deg) scale(-1, -1);
+}
+
+.outer-arc_start-a {
+    border-color: transparent transparent transparent var(--spinner);
+    /*NOTE: the order here very much matters!  */
+    transform: var(--center);
+}
+
+.outer-arc_end-a {
+    border-color: transparent transparent transparent var(--spinner);
+    transform: var(--center) rotate(10deg);
+}
+  
+.outer-arc_start-b {
+    border-color: transparent transparent transparent var(--spinner); 
+    transform: var(--center) scale(-1, -1);
+}
+.outer-arc_end-b {
+    border-color: transparent transparent transparent var(--spinner); 
+    transform: var(--center) rotate(10deg) scale(-1, -1);
+}
+  
+@keyframes spin { 100% {transform: rotate(360deg); } }
+.loader {
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+  

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'ArialMT';
+    src: local('ArialMT'), url(./fonts/arialmt.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Arial-BoldMT';
+    src: local('Arial-BoldMT'), url(./fonts/ARIALBOLDMT.woff) format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* @font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./fonts/MyFont.woff) format('woff'); */
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  /* } */

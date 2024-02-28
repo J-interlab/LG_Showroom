@@ -1,0 +1,150 @@
+@media only screen and (max-width: 767.98px) {
+    .panel {
+        flex-direction: row;
+        right: 32px;
+        bottom: 32px;
+    }
+
+    .infill {
+        width: 50px;
+        height: 50px;
+    }
+
+    .infill-on {
+        border-radius: 8px 0 0 8px;
+    }
+    
+    .infill-off {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .seperator {
+        width: 1px;
+        border-width: 4px 0;
+    }
+
+    .img-reset {
+        padding-left: 4px;
+        width: 30px;
+    }
+
+    .reset {
+        border-radius: 8px;
+        background: url('./images/reset.png') no-repeat center;
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .reset:active {
+        background: url('./images/reset-active.png') no-repeat center;
+    }
+
+    .img-btn {
+        width: 36px;
+        padding-top: 14px;
+        user-select: none;
+    }
+    
+}
+
+@media only screen and (min-width:768px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .panel {
+        flex-direction: column;
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .infill {
+        width: 50px;
+        height: 50px;
+    }
+
+    .infill-on {
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .infill-off {
+        border-radius: 0 0 8px 8px;
+    }
+
+    .seperator {
+        height: 1px;
+        border-width: 0 4px;
+    }
+
+    .img-reset {
+        padding-top: 4px;
+        width: 30px;
+    }
+
+    .reset {
+        border-radius: 8px;
+        background: url('./images/reset.png') no-repeat center;
+        margin-top: 12px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .reset:active {
+        background: url('./images/reset-active.png') no-repeat center;
+    }
+
+    .img-btn {
+        width: 36px;
+        padding-top: 14px;
+        user-select: none;
+    }
+    
+}
+
+.panel {
+    display: flex;
+    position: absolute;
+    
+}
+
+.infill {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+
+.active {
+    background-color: #464646;
+}
+
+.active:hover
+{
+    background-color: #333;
+}
+
+.inactive:hover {
+    background-color: #fcfcfc;
+}
+
+
+.seperator {
+    background-color: #d0d0d0;
+    border-color: white;
+    border-style: solid;    
+}
+
+
+.reset {
+    position: relative;
+    left: 0;
+    border-width: 0;
+    background-color: white;
+}
+
+.reset:hover {
+    background-color: #fcfcfc;
+}
+
+.reset:active {
+    outline: none;
+    background-color: #464646;
+}
+

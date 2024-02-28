@@ -1,0 +1,110 @@
+
+.header {
+    display: flex; 
+    flex-direction: row;
+    opacity: 0.9;
+    background-color: #eee;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-grow: 10;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.select-wrapper {
+    width: 232px;
+    margin-right: 20px;
+}
+
+.quality-select-wrapper {
+    width: 132px;
+    margin-right: 20px;
+}
+
+.textbox {
+    flex-grow: 0.5;
+    height: 34px;
+    padding: 0 0 0 9.5px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px 0 0 2px;
+    border-color: black;
+    background-color: transparent;
+    font-family: ArialMT;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.textbox:focus{
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4c4c4c;
+}
+
+.button {
+    width: 110px;
+    background-color: black;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial-BoldMT;
+    font-size: 16px;
+    transition: 0.2s all;
+}
+
+.button:active {
+    background-color: #1a1a1a;
+}
+
+
+.logo {
+    height: 40px;
+    padding: 30px;
+}
+
+.logo-wrapper {
+    flex-grow: 0;
+}
+
+
+@media only screen and (max-width: 1023.98px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .select-wrapper {
+        width: calc(100% - 50px);
+        margin: 10px;
+    }
+
+    .quality-select-wrapper {
+        width: calc(100% - 50px);
+        margin: 10px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+    }
+
+    .textbox {
+        width: calc(100% - 62px);
+        margin: 10px;
+        
+    }
+
+    .button {
+        margin: 10px;
+    }
+}

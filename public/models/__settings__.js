@@ -1,0 +1,1 @@
+ASSET_PREFIX="",SCRIPT_PREFIX="",SCENE_PATH="1375871.json",CONTEXT_OPTIONS={antialias:!0,alpha:!1,preserveDrawingBuffer:!1,preferWebGl2:!0,powerPreference:"default"},SCRIPTS=[75165835,75165974,75202323],CONFIG_FILENAME="pc.json.bin",INPUT_SETTINGS={useKeyboard:!0,useMouse:!0,useGamepads:!1,useTouch:!0},pc.script.legacy=!1,PRELOAD_MODULES=[];
